@@ -31,6 +31,37 @@ namespace desafio_invest
                 Asset newAsset = new Asset(cod, price, quantity);
                 assets.Add(cod, newAsset);
             }
+            History newHistory = new History (cod, price, quantity, DateTime.Now);
+            history.Add(newHistory);
         }
+
+        public List<History> ViewAsset() {
+            return this.history;
+        }
+
+        public string SellAsset(string cod, int quantity){
+            if(assets.ContainsKey(cod)){
+                if(assets[cod].Quantity >= quantity){
+                    assets[cod].Remove(quantity);
+                } else {
+                    return ("Não possui quantidade");
+                }
+            } else {
+                return ("Não possui asset");
+            }
+
+            History sellHistory = new History (cod, assets[cod].Price, quantity, DateTime.Now);
+            history.Add(sellHistory);
+
+            return ("Venda efetuada");
+        }
+
+        public int ResumeAsset(){
+            //valor alocado por ativos e valor total da carteira
+            
+            
+            
+        }
+        
     }
 }
