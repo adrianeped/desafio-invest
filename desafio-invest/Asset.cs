@@ -3,12 +3,10 @@ namespace desafio_invest
 {
     public class Asset
     {
-        string Cod;
-        int Quantity;
-        int Price;
-
+        public string Cod;
+        public int Quantity;
+        public int Price;
     
-
         public Asset (string cod, int quantity, int price)
         {
             Cod = cod;
@@ -24,6 +22,10 @@ namespace desafio_invest
         public void Add(int quantity, int price) {
             Quantity += quantity;
             Price = price;
+        }
+
+        public void Remove(int quantity){
+            Quantity -= quantity;
         }
     }
 }
