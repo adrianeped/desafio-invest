@@ -33,6 +33,7 @@ namespace desafio_invest
             }
             History newHistory = new History (cod, price, quantity, DateTime.Now);
             history.Add(newHistory);
+            
         }
 
         public List<History> ViewAsset() {
@@ -56,11 +57,17 @@ namespace desafio_invest
             return ("Venda efetuada");
         }
 
-        public int ResumeAsset(){
-            //valor alocado por ativos e valor total da carteira
-            
-            
-            
+        public void ResumeAsset(){
+            int total = 0;
+
+            foreach (KeyValuePair<string, Asset> asset in assets) {
+                total = asset.Value.CalculateTotal();
+                Console.WriteLine("-------------------------------------");
+                Console.WriteLine("Asset Cod: ", asset.Value.Cod);
+                Console.WriteLine("Total Asset {asset.Value.Cod}: ", asset.Value.CalculateTotal());
+                Console.WriteLine("-------------------------------------");
+            }
+            Console.WriteLine("Total Wallet:", total);
         }
         
     }
