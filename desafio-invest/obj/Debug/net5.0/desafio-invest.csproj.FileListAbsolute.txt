@@ -1,0 +1,15 @@
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/bin/Debug/net5.0/desafio-invest.deps.json
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/bin/Debug/net5.0/desafio-invest.runtimeconfig.json
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/bin/Debug/net5.0/desafio-invest.runtimeconfig.dev.json
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/bin/Debug/net5.0/desafio-invest.dll
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/bin/Debug/net5.0/ref/desafio-invest.dll
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/bin/Debug/net5.0/desafio-invest.pdb
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/obj/Debug/net5.0/desafio-invest.csprojAssemblyReference.cache
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/obj/Debug/net5.0/desafio-invest.GeneratedMSBuildEditorConfig.editorconfig
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/obj/Debug/net5.0/desafio-invest.AssemblyInfoInputs.cache
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/obj/Debug/net5.0/desafio-invest.AssemblyInfo.cs
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/obj/Debug/net5.0/desafio-invest.csproj.CoreCompileInputs.cache
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/obj/Debug/net5.0/desafio-invest.dll
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/obj/Debug/net5.0/ref/desafio-invest.dll
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/obj/Debug/net5.0/desafio-invest.pdb
+/Users/adrianepedroso/Projects/carteira-investimentos/desafio-invest/obj/Debug/net5.0/desafio-invest.genruntimeconfig.cache
