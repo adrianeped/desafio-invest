@@ -13,7 +13,10 @@ namespace desafio_invest
             public DateTime BoughtAt;
             public int InvestedValue;
 
-            public History (string cod, int price, int quantity, DateTime boughtAt) {
+            public string Action;
+
+            public History (string action, string cod, int price, int quantity, DateTime boughtAt) {
+                Action = action;
                 Cod = cod;
                 Price = price;
                 Quantity = quantity;
