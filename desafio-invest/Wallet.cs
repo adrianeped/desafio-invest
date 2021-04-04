@@ -76,11 +76,12 @@ namespace desafio_invest
             foreach (KeyValuePair<string, Asset> asset in assets) {
                 total = asset.Value.CalculateTotal();
                 Console.WriteLine("-------------------------------------");
-                Console.WriteLine("Asset Cod: ", asset.Value.Cod);
-                Console.WriteLine("Total Asset {asset.Value.Cod}: ", asset.Value.CalculateTotal());
+                Console.WriteLine($"Asset Cod: {asset.Value.Cod}");
+                Console.WriteLine($"Total Asset: R${asset.Value.CalculateTotal()}");
                 Console.WriteLine("-------------------------------------");
             }
-            Console.WriteLine("Total Wallet:", total);
+            Console.WriteLine($"Total Wallet: R${total}");
+            Console.WriteLine("-------------------------------------");
         }
         
     }
