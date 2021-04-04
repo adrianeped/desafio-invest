@@ -1,4 +1,4 @@
-# :tw-1f4b8: Carteira de Investimentos
+# Carteira de Investimentos
 
 ### Sobre:
 
@@ -18,4 +18,4 @@ dotnet run
 
 ### Autor
 
-- Adriane Antunes Pedroso :tw-1f64d:
+- Adriane Antunes Pedroso 
