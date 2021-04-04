@@ -34,30 +34,40 @@ namespace desafio_invest
                 Asset newAsset = new Asset(cod, price, quantity);
                 assets.Add(cod, newAsset);
             }
-            History newHistory = new History (cod, price, quantity, DateTime.Now);
+            History newHistory = new History ("Add", cod, price, quantity, DateTime.Now);
             history.Add(newHistory);
             
         }
 
-        public List<History> ViewAsset() {
-            return this.history;
+        public void ViewAsset() {
+            foreach (History h in history ) {
+                Console.WriteLine("------------Assets------------");
+                Console.WriteLine($"Action: {h.Action}");
+                Console.WriteLine($"Cod: {h.Cod}");
+                Console.WriteLine($"Price: R${h.Price}");
+                Console.WriteLine($"Quantity: {h.Quantity}");
+                Console.WriteLine($"Total value: R${h.InvestedValue}");
+                Console.WriteLine($"Date: {h.BoughtAt}");
+                Console.WriteLine("-------------------------------");
+                Console.WriteLine("");
+            }
         }
 
-        public string SellAsset(string cod, int quantity){
+        public void SellAsset(string cod, int quantity){
             if(assets.ContainsKey(cod)){
                 if(assets[cod].Quantity >= quantity){
                     assets[cod].Remove(quantity);
+                    History sellHistory = new History ("Sell",cod, assets[cod].Price, quantity, DateTime.Now);
+                    history.Add(sellHistory);
+
+                    Console.WriteLine("Sale made");
                 } else {
-                    return ("Não possui quantidade");
+                    Console.WriteLine("There is no quantity");
                 }
+
             } else {
-                return ("Não possui asset");
+                Console.WriteLine("Has no asset");
             }
-
-            History sellHistory = new History (cod, assets[cod].Price, quantity, DateTime.Now);
-            history.Add(sellHistory);
-
-            return ("Venda efetuada");
         }
 
         public void ResumeAsset(){
