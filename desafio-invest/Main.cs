@@ -47,7 +47,43 @@ namespace desafio_invest
 
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Wallet wallet = new Wallet();
+
+            int option = AskQuestion();
+
+            while (option != 0) {
+                switch(option){
+                    case 1:{
+                        string cod = GetText("Write down the asset's code you want to buy?");
+                        int price = GetNumber("What is the value of the asset?");
+                        int quantity = GetNumber("What is the quantity of the asset?");
+                        wallet.AddAsset(cod, price, quantity);
+                    break;
+                    }
+
+                    case 2:
+                        wallet.ViewAsset();
+                    break;
+
+                    case 3: {
+                        string cod = GetText("Write the code of the asset's code you want to sell?");
+                        int quantity = GetNumber("How many assets do you want to sell?");
+                        wallet.SellAsset(cod, quantity);
+                    break;
+                    }
+
+                    case 4:
+                        wallet.ResumeAsset();    
+                    break;
+
+                    default:
+                        Console.WriteLine("Invalid option");
+                    break;
+                }
+                option = AskQuestion();
+            }
         }
-    }
+
+    }         
+
 }
